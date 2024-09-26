@@ -45,6 +45,7 @@ jobs:
           target: 'http://testphp.vulnweb.com/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-J zap_report.json -t 600 -a'
+          
       - name: Upload ZAP Report Artifact
         uses: actions/upload-artifact@v3
         with:
